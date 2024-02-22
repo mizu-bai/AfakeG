@@ -1,7 +1,4 @@
-import os
 import sys
-
-ANG2BOHR = 1.8897259886
 
 ELEMENTS = [
     "Bq",
@@ -149,3 +146,5 @@ if __name__ == "__main__":
         if _ANCHOR_OPT_DONE in line.rstrip():
             with open(gop, "a") as f_gop:
                 f_gop.writelines(" Normal termination of Gaussian\n")
+
+    print("大师大法好！")

@@ -1,0 +1,848 @@
+ **************************************************************** 
+ **              _      __  __   _____   ____    ____          ** 
+ **             / \    |  \/  | | ____| / ___|  |  _ \         ** 
+ **            / _ \   | |\/| | |  _|   \___ \  | |_) |        ** 
+ **           / ___ \  | |  | | | |___   ___) | |  __/         ** 
+ **          /_/   \_\ |_|  |_| |_____| |____/  |_|            ** 
+ **                                                            ** 
+ **     Atomic and molecular electronic structure program      ** 
+ **                                                            ** 
+ **                  Author : Zhang Yingfeng                   ** 
+ **                                                            ** 
+ **         Version 1.1(dev), release date: 2024-03-02         ** 
+ **                                                            ** 
+ **               Amesp website : www.amesp.xyz                ** 
+ **                                                            ** 
+ **************************************************************** 
+ 
+ ------------------------- Input File ---------------------------
+ 
+ % npara 10
+ % maxcore 2000
+ ! B3LYP D3BJ 6-31G* opt freq
+ >xyz 0 1
+  C              0.00000000    0.00000000   -0.49687143
+  H              0.00000000    0.00000000   -1.56687143
+  N              0.00000000    0.00000000    0.64972857
+ end
+ 
+ ----------------------------------------------------------------
+ 
+  Method: b3lyp ; Basis Set: 6-31g(d)
+ 
+ ----------------------------------------------------------------
+ 
+  Number of atom type : 3
+  Alpha electrons:      7  Beta electrons:      7
+  Number of Atoms:      3  Number of nuclear charges:     14
+  Number of Shell:     14  Number of basis functions:     30
+  Highest Ang-Mom:      2  Maximum Contraction Depth:      6
+  Number of primitive gaussian functions:      60
+ 
+  Basis Set Information:
+   C              [ 3s 2p 1d | 10s 4p 1d ]
+   H              [ 2s | 4s ]
+   N              [ 3s 2p 1d | 10s 4p 1d ]
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %                                                              %
+ %                   Geometry Optimization                      %
+ %                                                              %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+                      Opt Solver : Berny
+ 
+                Redundant Internal Coordinates
+                    (Angstroem and Degrees)
+ 
+       Definition                      Value      Derivative     
+ ----------------------------------------------------------------
+ !  R   1     R(  1,  2)              1.0700    Estimate DE/DX  !
+ !  R   2     R(  1,  3)              1.1466    Estimate DE/DX  !
+ !  A   1     A(  2,  1,  3)        180.0000    Estimate DE/DX  !
+ ----------------------------------------------------------------
+ 
+ Number of Redundant Internal Coordinates: 3
+ Dimension of Wilson's B-Matrix: 3
+ 
+ Geom Opt Step:    1
+ 
+ Current Geometry(angstroms):
+ 
+  C               0.00000000    0.00000000   -0.49687143
+  H               0.00000000    0.00000000   -1.56687143
+  N               0.00000000    0.00000000    0.64972857
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         4.188767        2.216600
+  Min Atomic Distance :         2.022007        1.070000
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00000000          0.00000000          0.05762888
+ 
+  Rotational Constants [GHZ]:
+      44.8885630          44.8885630           0.0000000
+ 
+  Point Group of Current Geometry: C-inf-v
+ 
+  Max memory used/input in current calculation: 15MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0053 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0241 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-7)
+  Convergence of RMS-Density change :  10^(-7)
+ 
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+  Atom SCF Done after   49 cycles for N
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16186
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.587
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33717674E+01   3.28E+01   0.00E+00   8.12E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32138227E+01   1.58E-01   1.73E-02   2.77E-02    0.00
+    3  -9.33988837E+01  -1.85E-01   4.45E-03   5.58E-02    0.00
+    4  -9.33254180E+01   7.35E-02   9.71E-03   1.33E-01    0.00
+    5  -9.34139125E+01  -8.85E-02   4.91E-03   3.09E-02    0.00
+    6  -9.34177372E+01  -3.82E-03   2.65E-03   1.94E-02    0.00
+    7  -9.34191565E+01  -1.42E-03   1.36E-03   9.71E-03    0.00
+    8  -9.34196263E+01  -4.70E-04   4.48E-04   8.04E-05    0.00
+    9  -9.34196263E+01  -3.37E-08   4.62E-06   5.60E-06    0.00
+   10  -9.34196263E+01  -2.37E-10   4.40E-07   9.11E-07    0.00
+   11  -9.34196263E+01  -7.39E-12   8.72E-08   1.74E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  11 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0066          EN_N =      24.022265536
+  ETot =      -93.419626297          Ekin =      92.811406217
+  EN_e =     -265.898484020          Ee_e =      65.850940914
+  E_xc =      -10.205754944          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3564971     -10.2374663      -0.9230561      -0.6079103
+       -0.3786600      -0.3611734      -0.3611734
+ 
+   vir orbital:      8    30
+        0.0246122       0.0246122       0.0822655       0.2787922
+        0.5191299       0.5191299       0.6439301       0.6987123
+        0.7729925       0.7729925       0.8222990       1.1071172
+        1.4838884       1.5034357       1.5034370       1.5370114
+        1.5370114       1.9557151       1.9557172       2.5632761
+        2.5632761       2.6459538       3.0076459
+ 
+ HOMO =      -0.3611734 AU   index :  7
+ LUMO =       0.0246122 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3857856 AU    =     242.0843380 Kcal/mol
+             =      10.4977593 eV    =    1012.8801603  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   C         0.016406
+     2   H         0.244630
+     3   N        -0.261036
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=    -0.0000    Y=     0.0000    Z=    -2.9001    Tot=     2.9001
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -11.3446     YY=        -11.3446     ZZ=         -9.5515
+   XY=         0.0000     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -0.5977     YY=         -0.5977     ZZ=          1.1954
+   XY=         0.0000     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -0.0000   YYY=          0.0000   ZZZ=         -6.8016
+   XYY=         -0.0000   XXY=          0.0000   XXZ=         -0.1251
+   XZZ=          0.0000   YZZ=          0.0000   YYZ=         -0.1251
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001455659
+  E[DFT]  =    -93.421081955
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  C          -0.0000000000     0.0000000000     0.0264764694
+  H           0.0000000000     0.0000000000    -0.0000795719
+  N          -0.0000000000    -0.0000000000    -0.0263968975
+ 
+ Total time of gradient:        0.0005 min
+ 
+ ======================== Optimization ==========================
+ 
+ Lowest eigenvalues of augmented Hessian in RFO step:
+   -0.000574    0.795262    0.884931
+ 
+ The length of the step is inside the Trust Region, accept it.
+ Trusty Region Rad  =       0.30000000
+ 
+        Redundant Internal Coordinates (Bohr and Radian)
+ 
+  Definition    dE/dq         Value        Step       New-Value  
+ ----------------------------------------------------------------
+ !  R   1      0.000080      2.02201     -0.00016      2.02185  !
+ !  R   2     -0.026397      2.16676      0.02175      2.18851  !
+ !  A   1     -0.000000      3.14159      0.00000      3.14159  !
+ ----------------------------------------------------------------
+ 
+ Geometry Convergence:
+ 
+    Current Energy :         -93.421081955
+    Energy Change  :           0.000000000
+ 
+    Item              Value        Threshold       Converged?
+  ------------------------------------------------------------
+    RMS Force       0.0152403      0.0003000           NO
+    Max Force       0.0263969      0.0004500           NO
+    RMS Step        0.0125563      0.0012000           NO
+    Max Step        0.0217477      0.0018000           NO
+  ------------------------------------------------------------
+ 
+ Total time of current step:        0.0128 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ Geom Opt Step:    2
+ 
+ Current Geometry(angstroms):
+ 
+  C               0.00000000   -0.00000000   -0.50073500
+  H              -0.00000000    0.00000000   -1.57065267
+  N              -0.00000000    0.00000000    0.65737338
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         4.210359        2.228026
+  Min Atomic Distance :         2.021851        1.069918
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00000000         -0.00000000          0.05973459
+ 
+  Rotational Constants [GHZ]:
+      44.1379649          44.1379649           0.0000000
+ 
+  Point Group of Current Geometry: C-inf-v
+ 
+  Max memory used/input in current calculation: 15MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0004 Seconds
+ 
+  Four-centre eris     :               0.0353 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-7)
+  Convergence of RMS-Density change :  10^(-7)
+ 
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+  Atom SCF Done after   49 cycles for N
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16186
+ 
+  Initial guess generation...    Initial guess : read
+ 
+              Initial Guess Done, Time(s):     0.472
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.34077817E+01   3.15E+01   0.00E+00   1.59E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.34188685E+01  -1.11E-02   6.63E-04   1.11E-02    0.00
+    3  -9.34198670E+01  -9.98E-04   4.27E-04   1.20E-03    0.00
+    4  -9.34198800E+01  -1.30E-05   1.10E-04   2.89E-04    0.00
+    5  -9.34198806E+01  -6.46E-07   5.77E-05   3.62E-05    0.00
+    6  -9.34198806E+01   1.92E-08   6.31E-06   8.32E-05    0.00
+    7  -9.34198806E+01  -2.79E-08   3.75E-06   6.09E-06    0.00
+    8  -9.34198806E+01  -2.06E-10   3.93E-07   1.05E-07    0.00
+    9  -9.34198806E+01   2.84E-14   2.42E-08   2.71E-08    0.00
+ 
+ ================================================================
+  SCF Done , After   9 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0072          EN_N =      23.821302927
+  ETot =      -93.419880613          Ekin =      92.752290352
+  EN_e =     -265.446431473          Ee_e =      65.648677046
+  E_xc =      -10.195719465          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3596385     -10.2403882      -0.9189414      -0.6090074
+       -0.3797579      -0.3587110      -0.3587110
+ 
+   vir orbital:      8    30
+        0.0202829       0.0202829       0.0812991       0.2793536
+        0.5200200       0.5200200       0.6448771       0.6941581
+        0.7713810       0.7713810       0.8187820       1.0916438
+        1.4780724       1.5067460       1.5067481       1.5281226
+        1.5281226       1.9489154       1.9489187       2.5508223
+        2.5508223       2.6281325       2.9823627
+ 
+ HOMO =      -0.3587110 AU   index :  7
+ LUMO =       0.0202829 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3789939 AU    =     237.8224689 Kcal/mol
+             =      10.3129473 eV    =     995.0485127  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   C         0.019040
+     2   H         0.245270
+     3   N        -0.264310
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0000    Y=     0.0000    Z=    -2.9007    Tot=     2.9007
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -11.3821     YY=        -11.3821     ZZ=         -9.5510
+   XY=         0.0000     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -0.6104     YY=         -0.6104     ZZ=          1.2208
+   XY=         0.0000     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=          0.0000   YYY=          0.0000   ZZZ=         -6.8956
+   XYY=          0.0000   XXY=          0.0000   XXZ=         -0.1423
+   XZZ=          0.0000   YZZ=          0.0000   YYZ=         -0.1423
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001454829
+  E[DFT]  =    -93.421335442
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.014
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  C          -0.0000000000     0.0000000000    -0.0029872860
+  H          -0.0000000000     0.0000000000     0.0002612527
+  N           0.0000000000    -0.0000000000     0.0027260333
+ 
+ Total time of gradient:        0.0005 min
+ 
+ ======================== Optimization ==========================
+ 
+ Quartic Linear Search produced preformed.
+ Line Search alpha  =       0.09687082
+ 
+ Lowest eigenvalues of augmented Hessian in RFO step:
+   -0.000000    0.795262    0.886607
+ 
+ The length of the step is inside the Trust Region, accept it.
+ Trusty Region Rad  =       0.30000000
+ 
+        Redundant Internal Coordinates (Bohr and Radian)
+ 
+  Definition    dE/dq         Value        Step       New-Value  
+ ----------------------------------------------------------------
+ !  R   1     -0.000261      2.02185      0.00046      2.02231  !
+ !  R   2      0.002726      2.18851     -0.00203      2.18648  !
+ !  A   1     -0.000000      3.14159      0.00000      3.14159  !
+ ----------------------------------------------------------------
+ 
+ Geometry Convergence:
+ 
+    Current Energy :         -93.421335442
+    Energy Change  :          -0.000253486
+ 
+    Item              Value        Threshold       Converged?
+  ------------------------------------------------------------
+    RMS Force       0.0015811      0.0003000           NO
+    Max Force       0.0027260      0.0004500           NO
+    RMS Step        0.0012030      0.0012000           NO
+    Max Step        0.0020317      0.0018000           NO
+  ------------------------------------------------------------
+ 
+ Total time of current step:        0.0107 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ Geom Opt Step:    3
+ 
+ Current Geometry(angstroms):
+ 
+  C               0.00000000   -0.00000000   -0.50029503
+  H              -0.00000000    0.00000000   -1.57045748
+  N              -0.00000000    0.00000000    0.65673823
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         4.208790        2.227196
+  Min Atomic Distance :         2.022314        1.070162
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00000000         -0.00000000          0.05960806
+ 
+  Rotational Constants [GHZ]:
+      44.2043012          44.2043012           0.0000000
+ 
+  Point Group of Current Geometry: C-inf-v
+ 
+  Max memory used/input in current calculation: 15MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0259 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-7)
+  Convergence of RMS-Density change :  10^(-7)
+ 
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+  Atom SCF Done after   49 cycles for N
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16186
+ 
+  Initial guess generation...    Initial guess : read
+ 
+              Initial Guess Done, Time(s):     0.543
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.34209175E+01   3.16E+01   0.00E+00   1.43E-03    0.00
+                    ==== Turning on DIIS ====
+    2  -9.34199311E+01   9.86E-04   6.06E-05   9.96E-04    0.00
+    3  -9.34198834E+01   4.77E-05   3.91E-05   1.05E-04    0.00
+    4  -9.34198834E+01  -6.48E-08   2.12E-05   7.20E-05    0.00
+    5  -9.34198835E+01  -5.63E-08   7.20E-06   1.04E-05    0.00
+    6  -9.34198835E+01   5.01E-10   1.23E-06   1.47E-05    0.00
+    7  -9.34198835E+01  -1.11E-09   7.31E-07   4.68E-07    0.00
+    8  -9.34198835E+01  -2.05E-12   4.01E-08   8.83E-09    0.00
+ 
+ ================================================================
+  SCF Done , After   8 cycles.   Total SCF time:       0.001 min
+ 
+  -V/T =             2.0071          EN_N =      23.839076296
+  ETot =      -93.419883484          Ekin =      92.757361596
+  EN_e =     -265.486456604          Ee_e =      65.666713037
+  E_xc =      -10.196577809          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3593435     -10.2401316      -0.9193232      -0.6088382
+       -0.3796526      -0.3589352      -0.3589352
+ 
+   vir orbital:      8    30
+        0.0206906       0.0206906       0.0813009       0.2793314
+        0.5199379       0.5199379       0.6447929       0.6946287
+        0.7715312       0.7715312       0.8190164       1.0928515
+        1.4786168       1.5064398       1.5064419       1.5289565
+        1.5289565       1.9495503       1.9495535       2.5520033
+        2.5520033       2.6296444       2.9845070
+ 
+ HOMO =      -0.3589352 AU   index :  7
+ LUMO =       0.0206906 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3796258 AU    =     238.2189651 Kcal/mol
+             =      10.3301410 eV    =     996.7074514  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   C         0.018786
+     2   H         0.245243
+     3   N        -0.264029
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=    -0.0000    Y=     0.0000    Z=    -2.9009    Tot=     2.9009
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -11.3789     YY=        -11.3789     ZZ=         -9.5508
+   XY=         0.0000     XZ=          0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -0.6094     YY=         -0.6094     ZZ=          1.2187
+   XY=         0.0000     XZ=          0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -0.0000   YYY=          0.0000   ZZZ=         -6.8905
+   XYY=         -0.0000   XXY=          0.0000   XXZ=         -0.1411
+   XZZ=         -0.0000   YZZ=          0.0000   YYZ=         -0.1411
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001454892
+  E[DFT]  =    -93.421338376
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.017
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  C           0.0000000000    -0.0000000000    -0.0001353450
+  H          -0.0000000000     0.0000000000     0.0000455173
+  N          -0.0000000000     0.0000000000     0.0000898277
+ 
+ Total time of gradient:        0.0006 min
+ 
+ ======================== Optimization ==========================
+ 
+ Energy downhill, no Linear Search step.
+ Line Search alpha  =       0.00000000
+ 
+ Lowest eigenvalues of augmented Hessian in RFO step:
+   -0.000000    0.795262    0.869481
+ 
+ The length of the step is inside the Trust Region, accept it.
+ Trusty Region Rad  =       0.00100000
+ 
+        Redundant Internal Coordinates (Bohr and Radian)
+ 
+  Definition    dE/dq         Value        Step       New-Value  
+ ----------------------------------------------------------------
+ !  R   1     -0.000046      2.02231      0.00009      2.02241  !
+ !  R   2      0.000090      2.18648     -0.00007      2.18641  !
+ !  A   1      0.000000      3.14159     -0.00000      3.14159  !
+ ----------------------------------------------------------------
+ 
+ Geometry Convergence:
+ 
+    Current Energy :         -93.421338376
+    Energy Change  :          -0.000002935
+ 
+    Item              Value        Threshold       Converged?
+  ------------------------------------------------------------
+    RMS Force       0.0000581      0.0003000          YES
+    Max Force       0.0000898      0.0004500          YES
+    RMS Step        0.0000665      0.0012000          YES
+    Max Step        0.0000918      0.0018000          YES
+  ------------------------------------------------------------
+ 
+ Total time of current step:        0.0116 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ Geometry Optimization Converged after 3 Steps.
+ 
+ =========================== Hessian ============================
+ 
+ Nuclear Repulsion Hessian done.         time(s) :        0.000
+ E*Sx*Sy Part to Hessian   done.         time(s) :        0.001
+ Fx*Qy Part to Hessian     done.         time(s) :        0.577
+ Qx*Gy Part to Hessian     done.         time(s) :        0.072
+ 
+ 3N-CPSCF Iteration(N=3):
+ 
+   icyc         RMS        Ndim      time(s)
+     1      0.05623617       9        0.067
+     2      0.04032684       9        0.071
+     3      0.00312238       9        0.061
+     4      0.00011575       9        0.065
+     5      0.00002155       9        0.066
+     6      0.00000177       9        0.065
+     7      0.00000051       1        0.010
+ 
+ 3N-CPSCF converged after   7 iterations.
+ 
+ Fx*Uy Part to Hessian     done.         time(s) :        0.405
+ One-Ints 2nd-Derivative   done.         time(s) :        0.023
+ Two-Ints 2nd-Derivative   done.         time(s) :        0.095
+ Exc Part to Hessian       done.         time(s) :        0.042
+ DFT-D Part to Hessian     done.         time(s) :        0.000
+ 
+ Cartesian Hessian (Hartrees/Bohr^2):
+ 
+               1                2                3                4                5
+   1     0.0612184257
+   2     0.0000000000     0.0612184257
+   3    -0.0000000000     0.0000000000     1.7345980630
+   4    -0.0317769560     0.0000000000    -0.0000000000     0.0165141384
+   5     0.0000000000    -0.0317769560     0.0000000000    -0.0000000000     0.0165141384
+   6     0.0000000000    -0.0000000000    -0.4226221294     0.0000000000    -0.0000000000
+   7    -0.0294484829     0.0000000000     0.0000000000     0.0152620670    -0.0000000000
+   8     0.0000000000    -0.0294484829    -0.0000000000    -0.0000000000     0.0152620670
+   9     0.0000000000    -0.0000000000    -1.3118335248     0.0000000000    -0.0000000000
+               6                7                8                9  
+   6     0.4098638352
+   7    -0.0000000000     0.0141864170
+   8     0.0000000000    -0.0000000000     0.0141864170
+   9     0.0127602784    -0.0000000000     0.0000000000     1.2990729440
+ 
+ Total time of hessian:        0.0203 min
+ 
+ GAPT charges:
+ 
+     1   C        -0.044924
+     2   H         0.242458
+     3   N        -0.197532
+ Sum of GAPT charges =      0.00000
+ 
+ ========================== Frequency ===========================
+ 
+  Harmonic frequencies(cm-1):
+ 
+    1       770.92880
+    2       770.92880
+    3      2210.67219
+    4      3482.85588
+ 
+  Zero-point vibrational energy:     0.01648342 Hartree
+                                        0.44854 eV
+                                        10.3435 Kcal/mol
+                                        43.2772 KJ/mol
+                                       3617.693 cm-1
+  Sum of electronic and ZPE:      -93.404854955 Hartree
+ 
+  Low frequencies(cm-1):
+ 
+    1        -2.79857
+    2        -2.79857
+    3        11.87260
+    4        15.64321
+    5        15.64321
+ 
+  Normal Modes:
+ 
+  index   iatom   XYZ         1          2          3          4 
+    1       1      X       0.15925    0.00002    0.00000   -0.00000
+    2       1      Y      -0.00002    0.15925   -0.00000    0.00000
+    3       1      Z      -0.00000    0.00000   -0.41561    0.12285
+    4       2      X      -0.98506   -0.00013    0.00000   -0.00000
+    5       2      Y       0.00013   -0.98506   -0.00000    0.00000
+    6       2      Z       0.00000   -0.00000   -0.80965   -0.99185
+    7       3      X      -0.06558   -0.00001   -0.00000    0.00000
+    8       3      Y       0.00001   -0.06558    0.00000   -0.00000
+    9       3      Z       0.00000   -0.00000    0.41441   -0.03389
+ 
+  >>>>>>>>>>>>>>>> IR spectrum (T^2,KM/Mole) <<<<<<<<<<<<<<<< 
+ 
+        freq(cm^-1)     T^2         Tx         Ty         Tz
+    1     770.929     35.153     -5.929      0.001      0.000
+    2     770.929     35.153     -0.001     -5.929     -0.000
+    3    2210.672      1.840      0.000     -0.000     -1.357
+    4    3482.856     52.499     -0.000      0.000     -7.246
+ 
+  >>>>>>>>>>> Summary of Thermodynamic Quantities <<<<<<<<<<< 
+ 
+  Temperature:      298.150 K
+  Pressure:         1.000 atm
+  Atom mass :
+      1      C        12.000000
+      2      H         1.007825
+      3      N        14.003074
+ 
+  Rotational Symmetry Number:    -1
+  Inertia:     -0.00000    40.82728    40.82728  amu*Bohr^2
+ 
+      Translational: 
+          Q(T)/NA :         5.517766E+06
+          U(T) :            0.8887276 kcal/mol
+          H(T) :            1.4812127 kcal/mol
+          S(T) :           35.8163529 cal/mol/K
+          CV :              2.9808072 cal/mol/K
+          CP :              4.9680120 cal/mol/K
+ 
+      Rotational: 
+          Q(T) :            1.405394E+02
+          U(T) :            0.5924851 kcal/mol
+          S(T) :           11.8149016 cal/mol/K
+          CV :              1.9872048 cal/mol/K
+ 
+      Vibrational: 
+          Q(V=0) :          1.050300E+00
+          Q(BOT) :          2.750941E-08
+          U(T)-U(0) :       0.1096053 kcal/mol
+          U(T) :           10.4531083 kcal/mol
+          S(T) :            0.4651415 cal/mol/K
+          CV(T) :           1.4049946 cal/mol/K
+ 
+      Electronic: 
+          Q :               1.0000000
+          U :               0.0000000 kcal/mol
+          S :               0.0000000 cal/mol/K
+          CV :              0.0000000 cal/mol/K
+ 
+      Total: 
+          Q(V=0)/NA :       8.144691E+08
+          Q(BOT)/NA :       2.133254E+01
+          S(T) :           48.0963960 cal/mol/K
+          CV(T) :           6.3730065 cal/mol/K
+          CP(T) :           8.3602113 cal/mol/K
+ 
+  Thermal correction to U(T):         0.01901855 Hartree
+                                        11.93433 Kcal/mol
+  Sum of electronic and U(T):      -93.402319828 Hartree
+ 
+  Thermal correction to H(T):         0.01996273 Hartree
+                                        12.52681 Kcal/mol
+  Sum of electronic and H(T):      -93.401375643 Hartree
+ 
+  Thermal correction to G(T):        -0.00288941 Hartree
+                                        -1.81314 Kcal/mol
+  Sum of electronic and G(T):      -93.424227789 Hartree
+ 
+ ----------------------------------------------------------------
+ 
+ Final Geometry(angstroms):
+ 
+  3
+  C            0.00000000   -0.00000000   -0.50029503
+  H           -0.00000000    0.00000000   -1.57045748
+  N           -0.00000000    0.00000000    0.65673823
+ 
+ Final Energy:      -93.4213383762
+ 
+ ====================================================================
+ 
+ The program run from  2024-03-20  21:12:39  to  2024-03-20  21:12:43
+ Total run time:     0 days,   0  hours,   0 minutes,  3.3593 seconds
+ Normal termination of Amesp!
+ 
+ ====================================================================

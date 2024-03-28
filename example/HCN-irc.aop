@@ -1,0 +1,3835 @@
+ **************************************************************** 
+ **              _      __  __   _____   ____    ____          ** 
+ **             / \    |  \/  | | ____| / ___|  |  _ \         ** 
+ **            / _ \   | |\/| | |  _|   \___ \  | |_) |        ** 
+ **           / ___ \  | |  | | | |___   ___) | |  __/         ** 
+ **          /_/   \_\ |_|  |_| |_____| |____/  |_|            ** 
+ **                                                            ** 
+ **     Atomic and molecular electronic structure program      ** 
+ **                                                            ** 
+ **                  Author : Zhang Yingfeng                   ** 
+ **                                                            ** 
+ **         Version 1.1(dev), release date: 2024-03-02         ** 
+ **                                                            ** 
+ **               Amesp website : www.amesp.xyz                ** 
+ **                                                            ** 
+ **************************************************************** 
+ 
+ ------------------------- Input File ---------------------------
+ 
+ % npara 10
+ % maxcore 2000
+ ! B3LYP D3BJ 6-31G* irc
+ >xyz 0 1
+  N             -0.55218594    0.05136928    0.00000000
+  C              0.63146502   -0.08632759    0.00000000
+  H              0.36798476    1.07883290    0.00000000
+ end
+ 
+ ----------------------------------------------------------------
+ 
+  Method: b3lyp ; Basis Set: 6-31g(d)
+ 
+ ----------------------------------------------------------------
+ 
+  Number of atom type : 3
+  Alpha electrons:      7  Beta electrons:      7
+  Number of Atoms:      3  Number of nuclear charges:     14
+  Number of Shell:     14  Number of basis functions:     30
+  Highest Ang-Mom:      2  Maximum Contraction Depth:      6
+  Number of primitive gaussian functions:      60
+ 
+  Basis Set Information:
+   N              [ 3s 2p 1d | 10s 4p 1d ]
+   C              [ 3s 2p 1d | 10s 4p 1d ]
+   H              [ 2s | 4s ]
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %                                                              %
+ %                Intrinsic Reaction Coordinate                 %
+ %                                                              %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+                    IRC Solver :      LQA
+                    MaxPoints  :      10
+                    MaxStep :         0.100
+ 
+ Starting from the TS structure:
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55218594    0.05136928    0.00000000
+  C               0.63146502   -0.08632759    0.00000000
+  H               0.36798476    1.07883290    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.606449        1.379274
+  Min Atomic Distance :         2.251861        1.191633
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800210          0.02853187          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     413.1865759          54.6731491          48.2841546
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0050 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0004 Seconds
+ 
+  Four-centre eris     :               0.0244 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16198
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.543
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33238507E+01   3.21E+01   0.00E+00   4.63E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32292899E+01   9.46E-02   7.69E-03   2.90E-02    0.00
+    3  -9.33340306E+01  -1.05E-01   4.69E-03   2.74E-02    0.00
+    4  -9.33358247E+01  -1.79E-03   3.74E-03   2.48E-02    0.00
+    5  -9.33376689E+01  -1.84E-03   2.31E-03   2.39E-02    0.00
+    6  -9.33399892E+01  -2.32E-03   1.20E-03   5.54E-04    0.00
+    7  -9.33399919E+01  -2.68E-06   5.94E-05   8.74E-05    0.00
+    8  -9.33399920E+01  -5.29E-08   8.58E-06   1.73E-05    0.00
+    9  -9.33399920E+01  -2.89E-09   1.78E-06   2.36E-06    0.00
+   10  -9.33399920E+01  -4.10E-11   2.01E-07   5.15E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0062          EN_N =      23.994780045
+  ETot =      -93.339991955          Ekin =      92.762088859
+  EN_e =     -265.450561960          Ee_e =      65.513551506
+  E_xc =      -10.159850404          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4061992     -10.2464145      -0.9890634      -0.5235679
+       -0.4516218      -0.3835324      -0.3338256
+ 
+   vir orbital:      8    30
+       -0.0569795       0.0088864       0.0615578       0.3180092
+        0.5255641       0.5272931       0.5680153       0.6692842
+        0.7065236       0.7389532       0.7717917       0.8321618
+        1.2563690       1.4719694       1.4919393       1.5090585
+        1.7883824       1.8919719       1.9618258       2.3210243
+        2.5048546       2.5268518       2.8212751
+ 
+ HOMO =      -0.3338256 AU   index :  7
+ LUMO =      -0.0569795 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2768461 AU    =     173.7236786 Kcal/mol
+             =       7.5333637 eV    =     726.8593618  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.220107
+     2   C        -0.043558
+     3   H         0.263665
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.2734    Y=     1.2345    Z=     0.0000    Tot=     1.2644
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.9566     YY=         -9.4243     ZZ=        -11.7806
+   XY=         0.8502     XZ=          0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.2361     YY=          2.2962     ZZ=         -0.0601
+   XY=         0.8502     XZ=          0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.5396   YYY=          0.3243   ZZZ=          0.0000
+   XYY=         -0.3719   XXY=         -0.4992   XXZ=         -0.0000
+   XZZ=         -0.7336   YZZ=         -0.5053   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001443646
+  E[DFT]  =    -93.341435600
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.014
+ Time of Exc-term gradient:(s)      0.016
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0000510482    -0.0000481797    -0.0000000000
+  C          -0.0000808704     0.0001380953     0.0000000000
+  H           0.0000298222    -0.0000899156     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ =========================== Hessian ============================
+ 
+ Nuclear Repulsion Hessian done.         time(s) :        0.000
+ E*Sx*Sy Part to Hessian   done.         time(s) :        0.001
+ Fx*Qy Part to Hessian     done.         time(s) :        0.564
+ Qx*Gy Part to Hessian     done.         time(s) :        0.070
+ 
+ 3N-CPSCF Iteration(N=3):
+ 
+   icyc         RMS        Ndim      time(s)
+     1      0.02902659       9        0.072
+     2      0.02003094       9        0.071
+     3      0.00251940       9        0.070
+     4      0.00048048       9        0.070
+     5      0.00010324       9        0.070
+     6      0.00000932       9        0.070
+     7      0.00000301       6        0.048
+     8      0.00000086       5        0.044
+ 
+ 3N-CPSCF converged after   8 iterations.
+ 
+ Fx*Uy Part to Hessian     done.         time(s) :        0.515
+ One-Ints 2nd-Derivative   done.         time(s) :        0.018
+ Two-Ints 2nd-Derivative   done.         time(s) :        0.098
+ Exc Part to Hessian       done.         time(s) :        0.039
+ DFT-D Part to Hessian     done.         time(s) :        0.000
+ 
+ Cartesian Hessian (Hartrees/Bohr^2):
+ 
+               1                2                3                4                5
+   1     1.0509408256
+   2    -0.1140431540    -0.0160255190
+   3    -0.0000000000    -0.0000000000    -0.0000362274
+   4    -1.0425019566     0.0719415198     0.0000000000     0.9923474206
+   5     0.1144299979     0.0706411679     0.0000000000    -0.0720109917     0.1188081460
+   6     0.0000000000     0.0000000000     0.0000158213    -0.0000000000    -0.0000000000
+   7    -0.0082085028     0.0420676197     0.0000000000     0.0501330561    -0.0424072771
+   8    -0.0004472779    -0.0546531691    -0.0000000000     0.0000861750    -0.1894995675
+   9    -0.0000000000    -0.0000000000    -0.0000106433     0.0000000000     0.0000000000
+               6                7                8                9  
+   6    -0.0000727812
+   7    -0.0000000000    -0.0419245567
+   8     0.0000000000     0.0003610599     0.2441522327
+   9     0.0000198706     0.0000000000    -0.0000000000    -0.0000092421
+ 
+ Total time of hessian:        0.0218 min
+ 
+ GAPT charges:
+ 
+     1   N        -0.128704
+     2   C        -0.142247
+     3   H         0.270952
+ Sum of GAPT charges =      0.00000
+ 
+ ========================== Frequency ===========================
+ 
+  Harmonic frequencies(cm-1):
+ 
+    1     -1145.25768
+    2      2065.34364
+    3      2597.75497
+ 
+  Zero-point vibrational energy:     0.00801423 Hartree
+                                        0.21808 eV
+                                         5.0290 Kcal/mol
+                                        21.0414 KJ/mol
+                                       1758.920 cm-1
+  Sum of electronic and ZPE:      -93.333421369 Hartree
+ 
+  Low frequencies(cm-1):
+ 
+    1        -5.21162
+    2        -8.10999
+    3        -9.06584
+    4        14.41160
+    5       -19.44273
+    6       -20.59243
+ 
+  Normal Modes:
+ 
+  index   iatom   XYZ         1          2          3 
+    1       1      X      -0.03207   -0.63684    0.00407
+    2       1      Y      -0.06705    0.05966    0.01614
+    3       1      Z      -0.00000    0.00000    0.00000
+    4       2      X      -0.04594    0.72395   -0.00400
+    5       2      Y       0.07529   -0.06066    0.06495
+    6       2      Z       0.00000   -0.00000   -0.00000
+    7       3      X       0.99272    0.22757   -0.00892
+    8       3      Y       0.03479   -0.10634   -0.99770
+    9       3      Z      -0.00000    0.00000    0.00000
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    1
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55375818    0.04808208   -0.00000000
+  C               0.62921260   -0.08263665    0.00000000
+  H               0.41665236    1.08053832   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.677591        1.416920
+  Min Atomic Distance :         2.234483        1.182437
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800222          0.02853110         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     410.4560042          54.6006527          48.1901837
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0004 Seconds
+ 
+  Four-centre eris     :               0.0284 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16193
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.544
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33244893E+01   3.21E+01   0.00E+00   4.48E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32291821E+01   9.53E-02   7.46E-03   2.83E-02    0.00
+    3  -9.33345102E+01  -1.05E-01   4.49E-03   2.66E-02    0.00
+    4  -9.33361127E+01  -1.60E-03   3.66E-03   2.45E-02    0.00
+    5  -9.33378739E+01  -1.76E-03   2.29E-03   2.40E-02    0.00
+    6  -9.33402242E+01  -2.35E-03   1.19E-03   5.38E-04    0.00
+    7  -9.33402268E+01  -2.60E-06   5.74E-05   9.09E-05    0.00
+    8  -9.33402269E+01  -6.26E-08   8.93E-06   1.64E-05    0.00
+    9  -9.33402269E+01  -2.71E-09   1.72E-06   2.18E-06    0.00
+   10  -9.33402269E+01  -3.72E-11   1.98E-07   5.17E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0063          EN_N =      23.973633236
+  ETot =      -93.340226878          Ekin =      92.759164031
+  EN_e =     -265.422601997          Ee_e =      65.509393876
+  E_xc =      -10.159816023          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4057657     -10.2444580      -0.9843864      -0.5267286
+       -0.4472783      -0.3823628      -0.3348295
+ 
+   vir orbital:      8    30
+       -0.0635925       0.0094159       0.0681738       0.3147634
+        0.5257877       0.5299719       0.5713684       0.6687815
+        0.7114612       0.7400363       0.7720978       0.8407146
+        1.2572750       1.4732195       1.4912069       1.5106983
+        1.7648773       1.8933055       1.9822962       2.3201187
+        2.5123118       2.5289531       2.8252242
+ 
+ HOMO =      -0.3348295 AU   index :  7
+ LUMO =      -0.0635925 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2712371 AU    =     170.2039747 Kcal/mol
+             =       7.3807350 eV    =     712.1329312  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.212100
+     2   C        -0.046526
+     3   H         0.258626
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.3440    Y=     1.2339    Z=     0.0000    Tot=     1.2809
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.8504     YY=         -9.4450     ZZ=        -11.7660
+   XY=         0.8868     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.1633     YY=          2.2421     ZZ=         -0.0789
+   XY=         0.8868     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.4193   YYY=          0.3457   ZZZ=          0.0000
+   XYY=         -0.3254   XXY=         -0.4519   XXZ=          0.0000
+   XZZ=         -0.7332   YZZ=         -0.5044   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001456053
+  E[DFT]  =    -93.341682931
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.015
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0020666056     0.0042898661    -0.0000000000
+  C           0.0025710871    -0.0043115500     0.0000000000
+  H          -0.0046376927     0.0000216839    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    2
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =       19.97570
+  Delta_t =        0.00799
+  Delta_s =        0.10005
+  T_calc  =       13.82318
+  NSteps  =      1729/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55531796    0.04481454    0.00000000
+  C               0.62694432   -0.07890351   -0.00000000
+  H               0.46533250    1.08148882   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.749159        1.454792
+  Min Atomic Distance :         2.213989        1.171592
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800222          0.02853110         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     409.0994876          54.4840744          48.0806671
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0246 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16195
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.501
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33254702E+01   3.22E+01   0.00E+00   4.33E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32285181E+01   9.70E-02   7.30E-03   2.76E-02    0.00
+    3  -9.33354478E+01  -1.07E-01   4.30E-03   2.58E-02    0.00
+    4  -9.33365325E+01  -1.08E-03   3.63E-03   2.57E-02    0.00
+    5  -9.33386681E+01  -2.14E-03   2.32E-03   2.36E-02    0.00
+    6  -9.33409706E+01  -2.30E-03   1.18E-03   5.23E-04    0.00
+    7  -9.33409731E+01  -2.51E-06   5.60E-05   9.21E-05    0.00
+    8  -9.33409731E+01  -7.26E-08   9.19E-06   1.55E-05    0.00
+    9  -9.33409731E+01  -2.55E-09   1.65E-06   2.15E-06    0.00
+   10  -9.33409731E+01  -3.72E-11   1.95E-07   5.13E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0063          EN_N =      23.953260416
+  ETot =      -93.340973148          Ekin =      92.756815986
+  EN_e =     -265.398239940          Ee_e =      65.507326290
+  E_xc =      -10.160135901          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4048628     -10.2427199      -0.9796146      -0.5297790
+       -0.4430507      -0.3810597      -0.3359584
+ 
+   vir orbital:      8    30
+       -0.0694234       0.0099419       0.0748174       0.3114835
+        0.5259671       0.5326573       0.5750047       0.6695017
+        0.7166870       0.7412659       0.7709468       0.8507728
+        1.2580755       1.4744904       1.4905411       1.5124023
+        1.7441826       1.8946707       2.0025729       2.3204261
+        2.5196590       2.5310751       2.8289130
+ 
+ HOMO =      -0.3359584 AU   index :  7
+ LUMO =      -0.0694234 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2665351 AU    =     167.2534118 Kcal/mol
+             =       7.2527866 eV    =     699.7877844  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.205268
+     2   C        -0.048773
+     3   H         0.254041
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.4244    Y=     1.2340    Z=    -0.0000    Tot=     1.3050
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.7344     YY=         -9.4663     ZZ=        -11.7495
+   XY=         0.9204     XZ=          0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.0843     YY=          2.1838     ZZ=         -0.0994
+   XY=         0.9204     XZ=          0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.2791   YYY=          0.3696   ZZZ=          0.0000
+   XYY=         -0.2734   XXY=         -0.3927   XXZ=          0.0000
+   XZZ=         -0.7312   YZZ=         -0.5016   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001463832
+  E[DFT]  =    -93.342436981
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.014
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0039943945     0.0086257885    -0.0000000000
+  C           0.0052997396    -0.0090136800     0.0000000000
+  H          -0.0092941340     0.0003878915     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    3
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        9.92958
+  Delta_t =        0.00397
+  Delta_s =        0.10006
+  T_calc  =        8.05487
+  NSteps  =      2027/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55683823    0.04154321    0.00000000
+  C               0.62463954   -0.07503747   -0.00000000
+  H               0.51389822    1.08090970   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.819912        1.492233
+  Min Atomic Distance :         2.194425        1.161240
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800222          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     409.7077489          54.3290717          47.9682660
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0005 Seconds
+ 
+  Four-centre eris     :               0.0287 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16188
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.598
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33267730E+01   3.22E+01   0.00E+00   4.19E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32274217E+01   9.94E-02   7.22E-03   2.69E-02    0.00
+    3  -9.33368427E+01  -1.09E-01   4.11E-03   2.49E-02    0.00
+    4  -9.33369693E+01  -1.27E-04   3.65E-03   2.88E-02    0.00
+    5  -9.33401059E+01  -3.14E-03   2.37E-03   2.23E-02    0.00
+    6  -9.33422198E+01  -2.11E-03   1.14E-03   5.07E-04    0.00
+    7  -9.33422222E+01  -2.41E-06   5.51E-05   9.31E-05    0.00
+    8  -9.33422223E+01  -8.34E-08   9.42E-06   1.45E-05    0.00
+    9  -9.33422223E+01  -2.46E-09   1.59E-06   2.24E-06    0.00
+   10  -9.33422223E+01  -4.01E-11   1.95E-07   4.89E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0063          EN_N =      23.937195383
+  ETot =      -93.342222307          Ekin =      92.755854088
+  EN_e =     -265.384278505          Ee_e =      65.509969318
+  E_xc =      -10.160962591          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4035749     -10.2411673      -0.9749453      -0.5328417
+       -0.4389885      -0.3796989      -0.3371934
+ 
+   vir orbital:      8    30
+       -0.0743576       0.0104691       0.0815747       0.3082118
+        0.5260859       0.5350678       0.5789300       0.6713698
+        0.7221965       0.7426067       0.7689471       0.8614439
+        1.2589522       1.4756807       1.4901851       1.5141730
+        1.7265181       1.8960777       2.0228281       2.3222688
+        2.5263963       2.5332505       2.8324212
+ 
+ HOMO =      -0.3371934 AU   index :  7
+ LUMO =      -0.0743576 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2628358 AU    =     164.9320736 Kcal/mol
+             =       7.1521240 eV    =     690.0753122  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.199455
+     2   C        -0.050480
+     3   H         0.249935
+ Sum of Mulliken charges =      0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.5127    Y=     1.2340    Z=    -0.0000    Tot=     1.3363
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.6087     YY=         -9.4900     ZZ=        -11.7307
+   XY=         0.9508     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.9989     YY=          2.1198     ZZ=         -0.1209
+   XY=         0.9508     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.1209   YYY=          0.3921   ZZZ=          0.0000
+   XYY=         -0.2170   XXY=         -0.3225   XXZ=          0.0000
+   XZZ=         -0.7277   YZZ=         -0.4967   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001468046
+  E[DFT]  =    -93.343690353
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.013
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0059021859     0.0128389425     0.0000000000
+  C           0.0078780406    -0.0135408346    -0.0000000000
+  H          -0.0137802265     0.0007018922     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    4
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        6.68721
+  Delta_t =        0.00267
+  Delta_s =        0.10004
+  T_calc  =        5.79112
+  NSteps  =      2164/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55834019    0.03827672    0.00000000
+  C               0.62232241   -0.07108539   -0.00000000
+  H               0.56235669    1.07923868   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.890455        1.529563
+  Min Atomic Distance :         2.176749        1.151886
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800222          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     411.9457225          54.1322257          47.8450845
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0000 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0008 Seconds
+ 
+  Four-centre eris     :               0.0246 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16184
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.500
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33282961E+01   3.22E+01   0.00E+00   4.04E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32258719E+01   1.02E-01   7.29E-03   2.63E-02    0.00
+    3  -9.33386337E+01  -1.13E-01   3.95E-03   2.43E-02    0.00
+    4  -9.33371670E+01   1.47E-03   3.77E-03   3.37E-02    0.00
+    5  -9.33422037E+01  -5.04E-03   2.45E-03   1.96E-02    0.00
+    6  -9.33439437E+01  -1.74E-03   1.07E-03   4.93E-04    0.00
+    7  -9.33439460E+01  -2.34E-06   5.53E-05   9.49E-05    0.00
+    8  -9.33439461E+01  -9.52E-08   9.65E-06   1.48E-05    0.00
+    9  -9.33439461E+01  -2.50E-09   1.57E-06   2.42E-06    0.00
+   10  -9.33439461E+01  -4.74E-11   2.08E-07   4.09E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0063          EN_N =      23.922477820
+  ETot =      -93.343946141          Ekin =      92.755348175
+  EN_e =     -265.374044450          Ee_e =      65.514337204
+  E_xc =      -10.162064889          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4019700     -10.2398235      -0.9703565      -0.5358439
+       -0.4351069      -0.3782849      -0.3384819
+ 
+   vir orbital:      8    30
+       -0.0784290       0.0109935       0.0882209       0.3050002
+        0.5261531       0.5372303       0.5830512       0.6743193
+        0.7277516       0.7440357       0.7666163       0.8715360
+        1.2600040       1.4768320       1.4903982       1.5159730
+        1.7115465       1.8975485       2.0423910       2.3258330
+        2.5320011       2.5354244       2.8356433
+ 
+ HOMO =      -0.3384819 AU   index :  7
+ LUMO =      -0.0784290 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2600529 AU    =     163.1858080 Kcal/mol
+             =       7.0763988 eV    =     682.7689422  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.194588
+     2   C        -0.051775
+     3   H         0.246363
+ Sum of Mulliken charges =      0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.6076    Y=     1.2345    Z=     0.0000    Tot=     1.3760
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.4747     YY=         -9.5154     ZZ=        -11.7107
+   XY=         0.9796     XZ=          0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.9078     YY=          2.0515     ZZ=         -0.1438
+   XY=         0.9796     XZ=          0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -2.9474   YYY=          0.4139   ZZZ=          0.0000
+   XYY=         -0.1563   XXY=         -0.2417   XXZ=          0.0000
+   XZZ=         -0.7233   YZZ=         -0.4905   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001470462
+  E[DFT]  =    -93.345416603
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.013
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0076389776     0.0167231672     0.0000000000
+  C           0.0102811329    -0.0180102754    -0.0000000000
+  H          -0.0179201106     0.0012871082     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    5
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        5.12814
+  Delta_t =        0.00205
+  Delta_s =        0.10002
+  T_calc  =        4.61123
+  NSteps  =      2247/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55982595    0.03501856    0.00000000
+  C               0.61999990   -0.06703402   -0.00000000
+  H               0.61065409    1.07626978   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.960440        1.566597
+  Min Atomic Distance :         2.160603        1.143342
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800221          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     416.0014498          53.8944536          47.7130588
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0312 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16184
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.516
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33299607E+01   3.23E+01   0.00E+00   4.07E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32239875E+01   1.06E-01   7.51E-03   2.56E-02    0.00
+    3  -9.33407610E+01  -1.17E-01   3.83E-03   2.46E-02    0.00
+    4  -9.33367513E+01   4.01E-03   4.01E-03   4.08E-02    0.00
+    5  -9.33448682E+01  -8.12E-03   2.54E-03   1.50E-02    0.00
+    6  -9.33461002E+01  -1.23E-03   9.64E-04   4.85E-04    0.00
+    7  -9.33461025E+01  -2.36E-06   5.69E-05   1.02E-04    0.00
+    8  -9.33461026E+01  -1.08E-07   9.94E-06   1.56E-05    0.00
+    9  -9.33461026E+01  -2.70E-09   1.62E-06   2.63E-06    0.00
+   10  -9.33461026E+01  -6.07E-11   2.48E-07   2.34E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0064          EN_N =      23.909337886
+  ETot =      -93.346102620          Ekin =      92.755268218
+  EN_e =     -265.367517758          Ee_e =      65.520217549
+  E_xc =      -10.163408514          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4001266     -10.2386761      -0.9659180      -0.5388326
+       -0.4314186      -0.3768524      -0.3397896
+ 
+   vir orbital:      8    30
+       -0.0816567       0.0115098       0.0947347       0.3018796
+        0.5261701       0.5390869       0.5872842       0.6782249
+        0.7330891       0.7455209       0.7644485       0.8803135
+        1.2613967       1.4779260       1.4913728       1.5177725
+        1.6991045       1.8990828       2.0609442       2.3313065
+        2.5360522       2.5375680       2.8385614
+ 
+ HOMO =      -0.3397896 AU   index :  7
+ LUMO =      -0.0816567 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2581328 AU    =     161.9809427 Kcal/mol
+             =       7.0241510 eV    =     677.7277892  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.190532
+     2   C        -0.052790
+     3   H         0.243322
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.7075    Y=     1.2351    Z=    -0.0000    Tot=     1.4234
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.3332     YY=         -9.5432     ZZ=        -11.6900
+   XY=         1.0071     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.8111     YY=          1.9789     ZZ=         -0.1678
+   XY=         1.0071     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -2.7609   YYY=          0.4328   ZZZ=         -0.0000
+   XYY=         -0.0922   XXY=         -0.1512   XXZ=         -0.0000
+   XZZ=         -0.7182   YZZ=         -0.4831   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001471957
+  E[DFT]  =    -93.347574578
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.014
+ Time of Exc-term gradient:(s)      0.017
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0091346692     0.0201640590    -0.0000000000
+  C           0.0124463458    -0.0222687250     0.0000000000
+  H          -0.0215810150     0.0021046660    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    6
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        4.24191
+  Delta_t =        0.00170
+  Delta_s =        0.10004
+  T_calc  =        3.91443
+  NSteps  =      2306/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.56129348    0.03177057    0.00000000
+  C               0.61767195   -0.06287548   -0.00000000
+  H               0.65876293    1.07188349   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         3.029681        1.603238
+  Min Atomic Distance :         2.145789        1.135503
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800221          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     422.0289244          53.6180154          47.5738441
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0004 Seconds
+ 
+  Four-centre eris     :               0.0252 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16187
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.527
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33316888E+01   3.23E+01   0.00E+00   4.16E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32218906E+01   1.10E-01   7.89E-03   2.50E-02    0.00
+    3  -9.33431536E+01  -1.21E-01   3.73E-03   2.49E-02    0.00
+    4  -9.33352280E+01   7.93E-03   4.37E-03   5.01E-02    0.00
+    5  -9.33478535E+01  -1.26E-02   2.67E-03   8.69E-03    0.00
+    6  -9.33486377E+01  -7.84E-04   8.53E-04   4.84E-04    0.00
+    7  -9.33486403E+01  -2.52E-06   5.99E-05   1.12E-04    0.00
+    8  -9.33486404E+01  -1.18E-07   1.03E-05   1.67E-05    0.00
+    9  -9.33486404E+01  -3.13E-09   1.76E-06   2.79E-06    0.00
+   10  -9.33486404E+01  -7.85E-11   3.16E-07   1.62E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0064          EN_N =      23.897843114
+  ETot =      -93.348640383          Ekin =      92.755563874
+  EN_e =     -265.364463278          Ee_e =      65.527366742
+  E_xc =      -10.164950835          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3981088     -10.2377089      -0.9616737      -0.5418405
+       -0.4279249      -0.3754292      -0.3410868
+ 
+   vir orbital:      8    30
+       -0.0840815       0.0120186       0.1010874       0.2988768
+        0.5261398       0.5406327       0.5915323       0.6829332
+        0.7376163       0.7470374       0.7631949       0.8872280
+        1.2632651       1.4789567       1.4932270       1.5195519
+        1.6889881       1.9006881       2.0780833       2.3388263
+        2.5382442       2.5396659       2.8411878
+ 
+ HOMO =      -0.3410868 AU   index :  7
+ LUMO =      -0.0840815 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2570053 AU    =     161.2733932 Kcal/mol
+             =       6.9934688 eV    =     674.7674043  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.187158
+     2   C        -0.053626
+     3   H         0.240784
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.8110    Y=     1.2353    Z=    -0.0000    Tot=     1.4777
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.1848     YY=         -9.5739     ZZ=        -11.6688
+   XY=         1.0337     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.7089     YY=          1.9019     ZZ=         -0.1930
+   XY=         1.0337     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -2.5628   YYY=          0.4473   ZZZ=          0.0000
+   XYY=         -0.0257   XXY=         -0.0522   XXZ=          0.0000
+   XZZ=         -0.7126   YZZ=         -0.4749   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001472903
+  E[DFT]  =    -93.350113287
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.015
+ Time of Exc-term gradient:(s)      0.016
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0103539942     0.0230937133    -0.0000000000
+  C           0.0143225855    -0.0262139517     0.0000000000
+  H          -0.0246765797     0.0031202384     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    7
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        3.69115
+  Delta_t =        0.00148
+  Delta_s =        0.10003
+  T_calc  =        3.47116
+  NSteps  =      2350/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.56273896    0.02853530    0.00000000
+  C               0.61534045   -0.05860593   -0.00000000
+  H               0.70660769    1.06599862   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         3.097982        1.639381
+  Min Atomic Distance :         2.132182        1.128302
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800221          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     430.1901040          53.3059809          47.4289373
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0006 Seconds
+ 
+  Four-centre eris     :               0.0372 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16190
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.524
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33334181E+01   3.24E+01   0.00E+00   4.26E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32197143E+01   1.14E-01   8.39E-03   2.45E-02    0.00
+    3  -9.33457390E+01  -1.26E-01   3.67E-03   2.53E-02    0.00
+    4  -9.33331453E+01   1.26E-02   4.76E-03   5.98E-02    0.00
+    5  -9.33508623E+01  -1.77E-02   2.81E-03   8.38E-03    0.00
+    6  -9.33510045E+01  -1.42E-04   1.42E-03   6.72E-03    0.00
+    7  -9.33513687E+01  -3.64E-04   8.03E-04   5.59E-03    0.00
+    8  -9.33515012E+01  -1.33E-04   2.55E-04   9.97E-05    0.00
+    9  -9.33515013E+01  -5.60E-08   5.31E-06   4.76E-06    0.00
+   10  -9.33515013E+01  -2.73E-10   5.40E-07   8.14E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0064          EN_N =      23.887981808
+  ETot =      -93.351501251          Ekin =      92.756178886
+  EN_e =     -265.364539613          Ee_e =      65.535525210
+  E_xc =      -10.166647543          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3959728     -10.2369065      -0.9576551      -0.5448872
+       -0.4246243      -0.3740379      -0.3423494
+ 
+   vir orbital:      8    30
+       -0.0857514       0.0125202       0.1072422       0.2960175
+        0.5260658       0.5418842       0.5957045       0.6882198
+        0.7403166       0.7485632       0.7640157       0.8919284
+        1.2656608       1.4799246       1.4959637       1.5212919
+        1.6810355       1.9023692       2.0933662       2.3483629
+        2.5384292       2.5417016       2.8435477
+ 
+ HOMO =      -0.3423494 AU   index :  7
+ LUMO =      -0.0857514 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2565980 AU    =     161.0178011 Kcal/mol
+             =       6.9823853 eV    =     673.6980077  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.184357
+     2   C        -0.054345
+     3   H         0.238702
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.9165    Y=     1.2348    Z=    -0.0000    Tot=     1.5378
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -13.0301     YY=         -9.6080     ZZ=        -11.6477
+   XY=         1.0596     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.6015     YY=          1.8206     ZZ=         -0.2191
+   XY=         1.0596     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -2.3541   YYY=          0.4556   ZZZ=          0.0000
+   XYY=          0.0420   XXY=          0.0543   XXZ=         -0.0000
+   XZZ=         -0.7068   YZZ=         -0.4663   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001473459
+  E[DFT]  =    -93.352974711
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.014
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0112965712     0.0255016934    -0.0000000000
+  C           0.0158908292    -0.0297733320     0.0000000000
+  H          -0.0271874004     0.0042716386     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    8
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        3.32965
+  Delta_t =        0.00133
+  Delta_s =        0.10002
+  T_calc  =        3.17649
+  NSteps  =      2384/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.56415992    0.02531388    0.00000000
+  C               0.61300705   -0.05422459   -0.00000000
+  H               0.75413432    1.05859037   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         3.165255        1.674981
+  Min Atomic Distance :         2.119759        1.121728
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800221          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     440.6453883          52.9616128          47.2790912
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0006 Seconds
+ 
+  Four-centre eris     :               0.0371 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16201
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.540
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33351113E+01   3.24E+01   0.00E+00   4.37E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32175840E+01   1.18E-01   8.97E-03   2.40E-02    0.00
+    3  -9.33484527E+01  -1.31E-01   3.63E-03   2.58E-02    0.00
+    4  -9.33313519E+01   1.71E-02   5.11E-03   6.85E-02    0.00
+    5  -9.33538909E+01  -2.25E-02   2.95E-03   9.28E-03    0.00
+    6  -9.33497689E+01   4.12E-03   1.33E-03   3.23E-02    0.00
+    7  -9.33546271E+01  -4.86E-03   1.52E-03   3.41E-04    0.00
+    8  -9.33546281E+01  -9.47E-07   2.71E-05   4.43E-05    0.00
+    9  -9.33546281E+01  -1.73E-08   5.10E-06   4.46E-06    0.00
+   10  -9.33546281E+01  -1.98E-10   6.62E-07   8.61E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0064          EN_N =      23.879522055
+  ETot =      -93.354628068          Ekin =      92.757010236
+  EN_e =     -265.367016646          Ee_e =      65.544304458
+  E_xc =      -10.168448171          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3937636     -10.2362568      -0.9538773      -0.5479769
+       -0.4215094      -0.3726944      -0.3435591
+ 
+   vir orbital:      8    30
+       -0.0867219       0.0130156       0.1131520       0.2933257
+        0.5259525       0.5428713       0.5997356       0.6937350
+        0.7406849       0.7500812       0.7676200       0.8942687
+        1.2685267       1.4808392       1.4994536       1.5229753
+        1.6751373       1.9041310       2.1063861       2.3595782
+        2.5367223       2.5436583       2.8456766
+ 
+ HOMO =      -0.3435591 AU   index :  7
+ LUMO =      -0.0867219 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2568373 AU    =     161.1679533 Kcal/mol
+             =       6.9888965 eV    =     674.3262439  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.182045
+     2   C        -0.054971
+     3   H         0.237017
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     1.0233    Y=     1.2332    Z=    -0.0000    Tot=     1.6025
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -12.8698     YY=         -9.6455     ZZ=        -11.6268
+   XY=         1.0846     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.4891     YY=          1.7352     ZZ=         -0.2461
+   XY=         1.0846     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -2.1356   YYY=          0.4566   ZZZ=          0.0000
+   XYY=          0.1097   XXY=          0.1667   XXZ=          0.0000
+   XZZ=         -0.7009   YZZ=         -0.4575   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001473711
+  E[DFT]  =    -93.356101778
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0119804997     0.0274113173    -0.0000000000
+  C           0.0171434603    -0.0329237371     0.0000000000
+  H          -0.0291239600     0.0055124199     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:    9
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        3.08533
+  Delta_t =        0.00123
+  Delta_s =        0.10000
+  T_calc  =        2.97673
+  NSteps  =      2411/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.56555501    0.02210577    0.00000000
+  C               0.61067502   -0.04972980   -0.00000000
+  H               0.80128527    1.04964624   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         3.231427        1.709998
+  Min Atomic Distance :         2.108514        1.115778
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800221          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     453.5953590          52.5882870          47.1247997
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0245 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16198
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.548
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33367546E+01   3.24E+01   0.00E+00   4.48E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32156082E+01   1.21E-01   9.60E-03   2.35E-02    0.00
+    3  -9.33512411E+01  -1.36E-01   3.62E-03   2.62E-02    0.00
+    4  -9.33287759E+01   2.25E-02   5.51E-03   7.75E-02    0.00
+    5  -9.33569241E+01  -2.81E-02   3.10E-03   1.11E-02    0.00
+    6  -9.33569335E+01  -9.39E-06   1.55E-03   1.38E-02    0.00
+    7  -9.33576815E+01  -7.48E-04   9.81E-04   7.97E-03    0.00
+    8  -9.33579645E+01  -2.83E-04   3.73E-04   8.66E-05    0.00
+    9  -9.33579646E+01  -4.54E-08   5.35E-06   1.15E-05    0.00
+   10  -9.33579646E+01  -1.92E-09   1.39E-06   1.44E-06    0.00
+   11  -9.33579646E+01  -3.51E-11   2.39E-07   1.89E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  11 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0065          EN_N =      23.872180392
+  ETot =      -93.357964579          Ekin =      92.757928839
+  EN_e =     -265.371072802          Ee_e =      65.553300884
+  E_xc =      -10.170301891          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3915197     -10.2357479      -0.9503465      -0.5511049
+       -0.4185699      -0.3714095      -0.3447041
+ 
+   vir orbital:      8    30
+       -0.0870476       0.0135046       0.1187664       0.2908239
+        0.5258044       0.5436209       0.6035885       0.6988867
+        0.7397842       0.7515774       0.7733428       0.8943237
+        1.2717057       1.4817140       1.5034313       1.5245849
+        1.6712615       1.9059753       2.1168509       2.3716466
+        2.5336653       2.5455174       2.8476159
+ 
+ HOMO =      -0.3447041 AU   index :  7
+ LUMO =      -0.0870476 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2576565 AU    =     161.6820084 Kcal/mol
+             =       7.0111880 eV    =     676.4770492  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.180159
+     2   C        -0.055508
+     3   H         0.235668
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     1.1302    Y=     1.2301    Z=    -0.0000    Tot=     1.6705
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -12.7047     YY=         -9.6867     ZZ=        -11.6066
+   XY=         1.1087     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.3720     YY=          1.6459     ZZ=         -0.2739
+   XY=         1.1087     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -1.9076   YYY=          0.4489   ZZZ=          0.0000
+   XYY=          0.1761   XXY=          0.2838   XXZ=          0.0000
+   XZZ=         -0.6951   YZZ=         -0.4488   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001473715
+  E[DFT]  =    -93.359438294
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.015
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0124124611     0.0288474783    -0.0000000000
+  C           0.0180708083    -0.0356634813     0.0000000000
+  H          -0.0304832694     0.0068160031    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Forward Step:   10
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        2.92135
+  Delta_t =        0.00117
+  Delta_s =        0.10004
+  T_calc  =        2.84656
+  NSteps  =      2435/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.56692320    0.01890622    0.00000000
+  C               0.60834741   -0.04511203   -0.00000000
+  H               0.84800994    1.03911911   -0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         3.296405        1.744382
+  Min Atomic Distance :         2.098358        1.110403
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800221          0.02853111         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     469.3373890          52.1895100          46.9668744
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0300 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16194
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.538
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33383549E+01   3.25E+01   0.00E+00   4.59E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32138724E+01   1.24E-01   1.02E-02   2.31E-02    0.00
+    3  -9.33540629E+01  -1.40E-01   3.62E-03   2.84E-02    0.00
+    4  -9.33255133E+01   2.85E-02   5.93E-03   8.67E-02    0.00
+    5  -9.33599309E+01  -3.44E-02   3.28E-03   1.27E-02    0.00
+    6  -9.33602180E+01  -2.87E-04   1.68E-03   1.63E-02    0.00
+    7  -9.33611710E+01  -9.53E-04   1.05E-03   7.94E-03    0.00
+    8  -9.33614574E+01  -2.86E-04   3.76E-04   1.21E-04    0.00
+    9  -9.33614575E+01  -7.96E-08   6.50E-06   1.33E-05    0.00
+   10  -9.33614575E+01  -2.27E-09   1.47E-06   1.69E-06    0.00
+   11  -9.33614575E+01  -4.47E-11   2.65E-07   2.73E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  11 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0065          EN_N =      23.865826189
+  ETot =      -93.361457489          Ekin =      92.758887475
+  EN_e =     -265.376321755          Ee_e =      65.562327587
+  E_xc =      -10.172176985          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3892710     -10.2353663      -0.9470644      -0.5542694
+       -0.4157928      -0.3701904      -0.3457785
+ 
+   vir orbital:      8    30
+       -0.0867765       0.0139863       0.1240435       0.2885323
+        0.5256256       0.5441517       0.6072499       0.7026921
+        0.7393635       0.7530413       0.7802034       0.8923889
+        1.2749817       1.4825618       1.5075254       1.5261058
+        1.6694426       1.9078994       2.1246304       2.3830910
+        2.5304533       2.5472617       2.8494157
+ 
+ HOMO =      -0.3457785 AU   index :  7
+ LUMO =      -0.0867765 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2590020 AU    =     162.5263346 Kcal/mol
+             =       7.0478014 eV    =     680.0097075  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.178662
+     2   C        -0.055939
+     3   H         0.234601
+ Sum of Mulliken charges =      0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     1.2367    Y=     1.2251    Z=    -0.0000    Tot=     1.7408
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -12.5352     YY=         -9.7319     ZZ=        -11.5872
+   XY=         1.1314     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.2505     YY=          1.5529     ZZ=         -0.3024
+   XY=         1.1314     XZ=         -0.0000     YZ=         -0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -1.6701   YYY=          0.4318   ZZZ=          0.0000
+   XYY=          0.2400   XXY=          0.4041   XXZ=         -0.0000
+   XZZ=         -0.6896   YZZ=         -0.4405   YYZ=         -0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001473517
+  E[DFT]  =    -93.362931006
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.017
+ Time of Exc-term gradient:(s)      0.017
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N           0.0125970031     0.0298364586    -0.0000000000
+  C           0.0186891226    -0.0379861305     0.0000000000
+  H          -0.0312861257     0.0081496719     0.0000000000
+ 
+ Total time of gradient:        0.0006 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    1
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.55061370    0.05465648    0.00000000
+  C               0.63371744   -0.09001853   -0.00000000
+  H               0.31931716    1.07712748    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.536901        1.342470
+  Min Atomic Distance :         2.254698        1.193135
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800198          0.02853265          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     416.7451755          54.6989808          48.3525695
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0293 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16200
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.503
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33235354E+01   3.21E+01   0.00E+00   4.78E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32287376E+01   9.48E-02   7.93E-03   2.97E-02    0.00
+    3  -9.33339743E+01  -1.05E-01   4.88E-03   2.83E-02    0.00
+    4  -9.33356976E+01  -1.72E-03   3.84E-03   2.65E-02    0.00
+    5  -9.33380189E+01  -2.32E-03   2.36E-03   2.34E-02    0.00
+    6  -9.33402503E+01  -2.23E-03   1.20E-03   5.72E-04    0.00
+    7  -9.33402531E+01  -2.76E-06   6.21E-05   8.00E-05    0.00
+    8  -9.33402531E+01  -4.35E-08   8.11E-06   1.81E-05    0.00
+    9  -9.33402531E+01  -3.05E-09   1.84E-06   2.68E-06    0.00
+   10  -9.33402531E+01  -5.00E-11   2.12E-07   5.10E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0062          EN_N =      24.013772669
+  ETot =      -93.340253134          Ekin =      92.765063016
+  EN_e =     -265.476789799          Ee_e =      65.517832913
+  E_xc =      -10.160131933          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4060833     -10.2485861      -0.9934220      -0.5202362
+       -0.4560035      -0.3844951      -0.3329579
+ 
+   vir orbital:      8    30
+       -0.0497601       0.0083594       0.0549317       0.3211590
+        0.5249371       0.5253191       0.5648830       0.6709739
+        0.7020195       0.7380515       0.7694533       0.8261244
+        1.2552878       1.4708417       1.4925238       1.5074996
+        1.8142435       1.8906642       1.9410431       2.3228382
+        2.4979078       2.5247699       2.8170628
+ 
+ HOMO =      -0.3329579 AU   index :  7
+ LUMO =      -0.0497601 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2831978 AU    =     177.7094326 Kcal/mol
+             =       7.7062021 eV    =     743.5357450  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.229415
+     2   C        -0.039681
+     3   H         0.269096
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.2138    Y=     1.2370    Z=     0.0000    Tot=     1.2553
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.0530     YY=         -9.4023     ZZ=        -11.7935
+   XY=         0.8099     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.3034     YY=          2.3473     ZZ=         -0.0439
+   XY=         0.8099     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.6383   YYY=          0.3091   ZZZ=          0.0000
+   XYY=         -0.4124   XXY=         -0.5342   XXZ=          0.0000
+   XZZ=         -0.7323   YZZ=         -0.5046   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001429987
+  E[DFT]  =    -93.341683121
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.015
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0020543530    -0.0042679673     0.0000000000
+  C          -0.0024381954     0.0040074888    -0.0000000000
+  H           0.0044925484     0.0002604785     0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    2
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =       20.61547
+  Delta_t =        0.00825
+  Delta_s =        0.10003
+  T_calc  =       14.32363
+  NSteps  =      1736/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.54902027    0.05796579    0.00000000
+  C               0.63594385   -0.09369616   -0.00000000
+  H               0.27066792    1.07493576    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.468330        1.306184
+  Min Atomic Distance :         2.257524        1.194630
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800198          0.02853265         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     421.5340001          54.6823610          48.4033650
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0247 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16198
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.546
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33235381E+01   3.21E+01   0.00E+00   4.92E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32276195E+01   9.59E-02   8.16E-03   3.03E-02    0.00
+    3  -9.33343051E+01  -1.07E-01   5.05E-03   2.91E-02    0.00
+    4  -9.33357176E+01  -1.41E-03   3.95E-03   2.94E-02    0.00
+    5  -9.33389007E+01  -3.18E-03   2.43E-03   2.24E-02    0.00
+    6  -9.33409651E+01  -2.06E-03   1.20E-03   5.92E-04    0.00
+    7  -9.33409679E+01  -2.87E-06   6.55E-05   6.91E-05    0.00
+    8  -9.33409680E+01  -3.47E-08   7.53E-06   1.88E-05    0.00
+    9  -9.33409680E+01  -3.13E-09   1.89E-06   3.09E-06    0.00
+   10  -9.33409680E+01  -6.42E-11   2.38E-07   4.97E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0062          EN_N =      24.033562575
+  ETot =      -93.340967978          Ekin =      92.769128801
+  EN_e =     -265.507927073          Ee_e =      65.525160004
+  E_xc =      -10.160892284          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4053850     -10.2509126      -0.9974565      -0.5169465
+       -0.4603086      -0.3852514      -0.3322543
+ 
+   vir orbital:      8    30
+       -0.0421590       0.0078369       0.0487057       0.3241164
+        0.5229791       0.5250589       0.5619831       0.6733472
+        0.6987143       0.7373379       0.7649461       0.8234252
+        1.2541052       1.4698121       1.4927588       1.5060428
+        1.8420355       1.8893405       1.9208759       2.3252066
+        2.4921971       2.5227468       2.8127010
+ 
+ HOMO =      -0.3322543 AU   index :  7
+ LUMO =      -0.0421590 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2900953 AU    =     182.0377112 Kcal/mol
+             =       7.8938939 eV    =     761.6452500  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.239943
+     2   C        -0.034845
+     3   H         0.274788
+ Sum of Mulliken charges =      0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.1653    Y=     1.2402    Z=     0.0000    Tot=     1.2512
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.1382     YY=         -9.3800     ZZ=        -11.8037
+   XY=         0.7649     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.3643     YY=          2.3940     ZZ=         -0.0297
+   XY=         0.7649     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7135   YYY=          0.2992   ZZZ=          0.0000
+   XYY=         -0.4481   XXY=         -0.5565   XXZ=          0.0000
+   XZZ=         -0.7289   YZZ=         -0.5015   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001420318
+  E[DFT]  =    -93.342388296
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.019
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0040310931    -0.0080165885     0.0000000000
+  C          -0.0044397871     0.0074726390    -0.0000000000
+  H           0.0084708802     0.0005439496     0.0000000000
+ 
+ Total time of gradient:        0.0006 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    3
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =       10.94102
+  Delta_t =        0.00438
+  Delta_s =        0.10001
+  T_calc  =        8.97163
+  NSteps  =      2049/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.54737818    0.06127296    0.00000000
+  C               0.63811471   -0.09733606   -0.00000000
+  H               0.22200413    1.07232437    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.400900        1.270502
+  Min Atomic Distance :         2.260218        1.196056
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800198          0.02853265         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     427.5594179          54.6295979          48.4403383
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0004 Seconds
+ 
+  Four-centre eris     :               0.0333 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16204
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.524
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33237815E+01   3.21E+01   0.00E+00   5.06E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32259145E+01   9.79E-02   8.37E-03   3.07E-02    0.00
+    3  -9.33349386E+01  -1.09E-01   5.19E-03   2.99E-02    0.00
+    4  -9.33358225E+01  -8.84E-04   4.08E-03   3.31E-02    0.00
+    5  -9.33402428E+01  -4.42E-03   2.53E-03   2.08E-02    0.00
+    6  -9.33420650E+01  -1.82E-03   1.18E-03   6.13E-04    0.00
+    7  -9.33420680E+01  -3.04E-06   6.98E-05   5.67E-05    0.00
+    8  -9.33420680E+01  -2.73E-08   6.87E-06   1.93E-05    0.00
+    9  -9.33420680E+01  -3.10E-09   1.92E-06   3.51E-06    0.00
+   10  -9.33420680E+01  -8.33E-11   2.79E-07   4.76E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0061          EN_N =      24.055346062
+  ETot =      -93.342068044          Ekin =      92.774853660
+  EN_e =     -265.547009970          Ee_e =      65.536979594
+  E_xc =      -10.162237389          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4040762     -10.2533286      -1.0010972      -0.5139520
+       -0.4643139      -0.3857930      -0.3317120
+ 
+   vir orbital:      8    30
+       -0.0346207       0.0073416       0.0433032       0.3267957
+        0.5215897       0.5247989       0.5592883       0.6749255
+        0.6983358       0.7368232       0.7590136       0.8237825
+        1.2529301       1.4688992       1.4925219       1.5047271
+        1.8684348       1.8879999       1.9045070       2.3277276
+        2.4885428       2.5208553       2.8083172
+ 
+ HOMO =      -0.3317120 AU   index :  7
+ LUMO =      -0.0346207 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2970912 AU    =     186.4277075 Kcal/mol
+             =       8.0842619 eV    =     780.0129817  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.251566
+     2   C        -0.029065
+     3   H         0.280631
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.1274    Y=     1.2444    Z=     0.0000    Tot=     1.2509
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.2117     YY=         -9.3569     ZZ=        -11.8106
+   XY=         0.7144     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.4186     YY=          2.4362     ZZ=         -0.0175
+   XY=         0.7144     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7652   YYY=          0.2957   ZZZ=          0.0000
+   XYY=         -0.4802   XXY=         -0.5660   XXZ=          0.0000
+   XZZ=         -0.7233   YZZ=         -0.4958   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001415703
+  E[DFT]  =    -93.343483747
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.013
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0056133914    -0.0109402788     0.0000000000
+  C          -0.0060917851     0.0105292921    -0.0000000000
+  H           0.0117051765     0.0004109868    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    4
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        7.92444
+  Delta_t =        0.00317
+  Delta_s =        0.10001
+  T_calc  =        6.99887
+  NSteps  =      2207/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.54570852    0.06454928    0.00000000
+  C               0.64025756   -0.10099877   -0.00000000
+  H               0.17329056    1.07041336    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.383052        1.261057
+  Min Atomic Distance :         2.262880        1.197465
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800198          0.02853265          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     433.9695387          54.5368594          48.4483639
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0273 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16205
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.544
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33241165E+01   3.21E+01   0.00E+00   5.18E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32234894E+01   1.01E-01   8.59E-03   3.09E-02    0.00
+    3  -9.33357443E+01  -1.12E-01   5.29E-03   3.07E-02    0.00
+    4  -9.33359276E+01  -1.83E-04   4.23E-03   3.74E-02    0.00
+    5  -9.33419164E+01  -5.99E-03   2.64E-03   1.88E-02    0.00
+    6  -9.33434619E+01  -1.55E-03   1.15E-03   6.39E-04    0.00
+    7  -9.33434652E+01  -3.33E-06   7.51E-05   4.82E-05    0.00
+    8  -9.33434652E+01  -2.18E-08   6.23E-06   1.98E-05    0.00
+    9  -9.33434652E+01  -2.98E-09   1.96E-06   3.94E-06    0.00
+   10  -9.33434652E+01  -1.05E-10   3.30E-07   4.45E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0061          EN_N =      24.074147521
+  ETot =      -93.343465223          Ekin =      92.781268554
+  EN_e =     -265.584367272          Ee_e =      65.549411360
+  E_xc =      -10.163925386          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.4021558     -10.2557756      -1.0040186      -0.5115393
+       -0.4676146      -0.3860426      -0.3312789
+ 
+   vir orbital:      8    30
+       -0.0278939       0.0068866       0.0390043       0.3291130
+        0.5210513       0.5245903       0.5567262       0.6738250
+        0.7028432       0.7365173       0.7528671       0.8262199
+        1.2518665       1.4682585       1.4917325       1.5035544
+        1.8702237       1.8866448       1.9136859       2.3298056
+        2.4877272       2.5190813       2.8039115
+ 
+ HOMO =      -0.3312789 AU   index :  7
+ LUMO =      -0.0278939 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3033850 AU    =     190.3771421 Kcal/mol
+             =       8.2555254 eV    =     796.5374042  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.264227
+     2   C        -0.022324
+     3   H         0.286551
+ Sum of Mulliken charges =      0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0991    Y=     1.2511    Z=     0.0000    Tot=     1.2550
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.2744     YY=         -9.3306     ZZ=        -11.8152
+   XY=         0.6589     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.4676     YY=          2.4761     ZZ=         -0.0085
+   XY=         0.6589     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7950   YYY=          0.3037   ZZZ=         -0.0000
+   XYY=         -0.5095   XXY=         -0.5620   XXZ=         -0.0000
+   XZZ=         -0.7158   YZZ=         -0.4880   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001414545
+  E[DFT]  =    -93.344879767
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.018
+ Time of Exc-term gradient:(s)      0.018
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0068519339    -0.0129189225    -0.0000000000
+  C          -0.0071942242     0.0128997205     0.0000000000
+  H           0.0140461580     0.0000192021    -0.0000000000
+ 
+ Total time of gradient:        0.0006 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    5
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        6.60509
+  Delta_t =        0.00264
+  Delta_s =        0.10001
+  T_calc  =        6.11103
+  NSteps  =      2312/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.54400320    0.06777658    0.00000000
+  C               0.64236165   -0.10471685   -0.00000000
+  H               0.12454339    1.06984276    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.425724        1.283638
+  Min Atomic Distance :         2.265478        1.198839
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800198          0.02853265          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     440.2395131          54.4062610          48.4220974
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0008 Seconds
+ 
+  Four-centre eris     :               0.0519 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16204
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.596
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33244170E+01   3.21E+01   0.00E+00   5.30E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32203173E+01   1.04E-01   8.82E-03   3.10E-02    0.00
+    3  -9.33366117E+01  -1.16E-01   5.37E-03   3.15E-02    0.00
+    4  -9.33359652E+01   6.47E-04   4.40E-03   4.20E-02    0.00
+    5  -9.33437812E+01  -7.82E-03   2.76E-03   1.65E-02    0.00
+    6  -9.33450596E+01  -1.28E-03   1.11E-03   6.70E-04    0.00
+    7  -9.33450634E+01  -3.75E-06   8.13E-05   4.00E-05    0.00
+    8  -9.33450634E+01  -1.88E-08   5.76E-06   2.02E-05    0.00
+    9  -9.33450634E+01  -2.81E-09   2.02E-06   4.09E-06    0.00
+   10  -9.33450634E+01  -1.27E-10   3.82E-07   3.95E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0060          EN_N =      24.087670948
+  ETot =      -93.345063413          Ekin =      92.788018830
+  EN_e =     -265.615679174          Ee_e =      65.560767099
+  E_xc =      -10.165841116          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3996761     -10.2581465      -1.0059974      -0.5103043
+       -0.4696102      -0.3859690      -0.3308978
+ 
+   vir orbital:      8    30
+       -0.0229193       0.0064993       0.0364296       0.3310067
+        0.5214169       0.5244782       0.5543106       0.6703116
+        0.7118959       0.7364123       0.7476538       0.8300254
+        1.2511163       1.4679831       1.4903515       1.5025490
+        1.8519961       1.8852970       1.9428056       2.3309158
+        2.4903931       2.5174711       2.7996070
+ 
+ HOMO =      -0.3308978 AU   index :  7
+ LUMO =      -0.0229193 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3079785 AU    =     193.2595637 Kcal/mol
+             =       8.3805189 eV    =     808.5974480  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.277721
+     2   C        -0.014746
+     3   H         0.292467
+ Sum of Mulliken charges =      0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0785    Y=     1.2617    Z=     0.0000    Tot=     1.2641
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.3264     YY=         -9.2994     ZZ=        -11.8179
+   XY=         0.5988     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.5118     YY=          2.5152     ZZ=         -0.0033
+   XY=         0.5988     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.8056   YYY=          0.3270   ZZZ=         -0.0000
+   XYY=         -0.5381   XXY=         -0.5438   XXZ=          0.0000
+   XZZ=         -0.7066   YZZ=         -0.4782   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001415844
+  E[DFT]  =    -93.346479257
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0077595494    -0.0139278772    -0.0000000000
+  C          -0.0077294468     0.0145774898     0.0000000000
+  H           0.0154889962    -0.0006496126    -0.0000000000
+ 
+ Total time of gradient:        0.0006 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    6
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        5.98357
+  Delta_t =        0.00239
+  Delta_s =        0.10000
+  T_calc  =        5.72029
+  NSteps  =      2389/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.54224938    0.07092772    0.00000000
+  C               0.64440773   -0.10850977   -0.00000000
+  H               0.07581273    1.07122112    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.474795        1.309605
+  Min Atomic Distance :         2.222006        1.175835
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800197          0.02853265          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     445.8264186          54.2412276          48.3578020
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0006 Seconds
+ 
+  Four-centre eris     :               0.0332 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16205
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.567
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33245973E+01   3.21E+01   0.00E+00   5.42E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32164593E+01   1.08E-01   9.08E-03   3.10E-02    0.00
+    3  -9.33374671E+01  -1.21E-01   5.44E-03   3.24E-02    0.00
+    4  -9.33358887E+01   1.58E-03   4.60E-03   4.68E-02    0.00
+    5  -9.33457201E+01  -9.83E-03   2.90E-03   1.43E-02    0.00
+    6  -9.33467709E+01  -1.05E-03   1.06E-03   7.05E-04    0.00
+    7  -9.33467752E+01  -4.29E-06   8.81E-05   3.90E-05    0.00
+    8  -9.33467752E+01  -1.92E-08   5.73E-06   2.03E-05    0.00
+    9  -9.33467752E+01  -2.67E-09   2.13E-06   4.05E-06    0.00
+   10  -9.33467752E+01  -1.43E-10   4.19E-07   3.24E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0060          EN_N =      24.093683225
+  ETot =      -93.346775196          Ekin =      92.794585430
+  EN_e =     -265.636442937          Ee_e =      65.569234173
+  E_xc =      -10.167835086          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3967441     -10.2603160      -1.0068389      -0.5108618
+       -0.4696997      -0.3855597      -0.3305021
+ 
+   vir orbital:      8    30
+       -0.0205586       0.0062125       0.0361212       0.3324676
+        0.5225830       0.5245082       0.5521288       0.6656896
+        0.7230949       0.7364850       0.7450118       0.8347201
+        1.2509142       1.4681497       1.4883872       1.5017378
+        1.8312258       1.8840043       1.9734604       2.3307410
+        2.4966945       2.5160856       2.7955797
+ 
+ HOMO =      -0.3305021 AU   index :  7
+ LUMO =      -0.0205586 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3099435 AU    =     194.4926695 Kcal/mol
+             =       8.4339914 eV    =     813.7567590  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.291760
+     2   C        -0.006544
+     3   H         0.298305
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0624    Y=     1.2775    Z=     0.0000    Tot=     1.2790
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.3683     YY=         -9.2623     ZZ=        -11.8192
+   XY=         0.5350     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.5517     YY=          2.5543     ZZ=         -0.0026
+   XY=         0.5350     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.8008   YYY=          0.3692   ZZZ=          0.0000
+   XYY=         -0.5686   XXY=         -0.5107   XXZ=          0.0000
+   XZZ=         -0.6960   YZZ=         -0.4668   YYZ=          0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001420160
+  E[DFT]  =    -93.348195356
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.016
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0084234616    -0.0141125075    -0.0000000000
+  C          -0.0077727130     0.0156459582     0.0000000000
+  H           0.0161961745    -0.0015334506    -0.0000000000
+ 
+ Total time of gradient:        0.0006 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    7
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        5.70417
+  Delta_t =        0.00228
+  Delta_s =        0.10002
+  T_calc  =        5.57868
+  NSteps  =      2444/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.54042999    0.07396943    0.00000000
+  C               0.64637008   -0.11238030   -0.00000000
+  H               0.02716802    1.07504424    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.530673        1.339174
+  Min Atomic Distance :         2.174678        1.150790
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800197          0.02853264         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     450.2473126          54.0463565          48.2540794
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0309 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16204
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.520
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33246464E+01   3.21E+01   0.00E+00   5.55E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32120954E+01   1.13E-01   9.37E-03   3.10E-02    0.00
+    3  -9.33382974E+01  -1.26E-01   5.49E-03   3.34E-02    0.00
+    4  -9.33356834E+01   2.61E-03   4.82E-03   5.14E-02    0.00
+    5  -9.33476620E+01  -1.20E-02   3.03E-03   1.22E-02    0.00
+    6  -9.33485342E+01  -8.72E-04   1.01E-03   7.42E-04    0.00
+    7  -9.33485391E+01  -4.92E-06   9.49E-05   4.70E-05    0.00
+    8  -9.33485392E+01  -2.42E-08   6.36E-06   1.98E-05    0.00
+    9  -9.33485392E+01  -2.61E-09   2.30E-06   3.73E-06    0.00
+   10  -9.33485392E+01  -1.47E-10   4.29E-07   2.87E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0059          EN_N =      24.090302673
+  ETot =      -93.348539160          Ekin =      92.800267267
+  EN_e =     -265.642439273          Ee_e =      65.573059429
+  E_xc =      -10.169729257          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3935176     -10.2621596      -1.0064186      -0.5133730
+       -0.4677412      -0.3848270      -0.3300295
+ 
+   vir orbital:      8    30
+       -0.0209959       0.0060608       0.0380003       0.3335516
+        0.5243018       0.5247190       0.5503521       0.6607610
+        0.7305683       0.7366978       0.7499025       0.8400165
+        1.2514931       1.4688020       1.4859071       1.5011487
+        1.8098898       1.8828406       2.0030067       2.3293109
+        2.5060277       2.5149925       2.7920554
+ 
+ HOMO =      -0.3300295 AU   index :  7
+ LUMO =      -0.0209959 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3090336 AU    =     193.9216972 Kcal/mol
+             =       8.4092317 eV    =     811.3678126  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.305994
+     2   C         0.001993
+     3   H         0.304001
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0473    Y=     1.3000    Z=     0.0000    Tot=     1.3009
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.4001     YY=         -9.2188     ZZ=        -11.8197
+   XY=         0.4682     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.5873     YY=          2.5941     ZZ=         -0.0068
+   XY=         0.4682     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7857   YYY=          0.4335   ZZZ=          0.0000
+   XYY=         -0.6043   XXY=         -0.4623   XXZ=          0.0000
+   XZZ=         -0.6843   YZZ=         -0.4540   YYZ=          0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001430052
+  E[DFT]  =    -93.349969211
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.016
+ Time of Exc-term gradient:(s)      0.016
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0089893104    -0.0138167039     0.0000000000
+  C          -0.0074819576     0.0162573528    -0.0000000000
+  H           0.0164712680    -0.0024406489    -0.0000000000
+ 
+ Total time of gradient:        0.0006 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    8
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        5.57971
+  Delta_t =        0.00223
+  Delta_s =        0.10003
+  T_calc  =        5.52392
+  NSteps  =      2474/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.53852732    0.07687932    0.00000000
+  C               0.64821861   -0.11630937   -0.00000000
+  H              -0.02127851    1.08139594    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.592939        1.372124
+  Min Atomic Distance :         2.135140        1.129867
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800197          0.02853264          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     453.3529561          53.8270082          48.1143480
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0008 Seconds
+ 
+  Four-centre eris     :               0.0377 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16203
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.585
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33246392E+01   3.22E+01   0.00E+00   5.69E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32075241E+01   1.17E-01   9.67E-03   3.09E-02    0.00
+    3  -9.33391522E+01  -1.32E-01   5.54E-03   3.49E-02    0.00
+    4  -9.33353679E+01   3.78E-03   5.04E-03   5.59E-02    0.00
+    5  -9.33495791E+01  -1.42E-02   3.17E-03   1.02E-02    0.00
+    6  -9.33503181E+01  -7.39E-04   9.75E-04   7.78E-04    0.00
+    7  -9.33503237E+01  -5.55E-06   1.01E-04   5.56E-05    0.00
+    8  -9.33503237E+01  -3.47E-08   7.64E-06   1.85E-05    0.00
+    9  -9.33503237E+01  -2.69E-09   2.52E-06   3.19E-06    0.00
+   10  -9.33503237E+01  -1.33E-10   4.08E-07   4.18E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0059          EN_N =      24.077183208
+  ETot =      -93.350323710          Ekin =      92.804468013
+  EN_e =     -265.632065238          Ee_e =      65.571475233
+  E_xc =      -10.171384926          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3901869     -10.2635820      -1.0047660      -0.5174282
+       -0.4641847      -0.3838203      -0.3294417
+ 
+   vir orbital:      8    30
+       -0.0235898       0.0060677       0.0413430       0.3343667
+        0.5251308       0.5262201       0.5492254       0.6559690
+        0.7316869       0.7369989       0.7637093       0.8458045
+        1.2530220       1.4699136       1.4830472       1.5007992
+        1.7886454       1.8818858       2.0307364       2.3269578
+        2.5142442       2.5170050       2.7892818
+ 
+ HOMO =      -0.3294417 AU   index :  7
+ LUMO =      -0.0235898 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3058519 AU    =     191.9251498 Kcal/mol
+             =       8.3226533 eV    =     803.0142642  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.320036
+     2   C         0.010527
+     3   H         0.309509
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0296    Y=     1.3301    Z=     0.0000    Tot=     1.3304
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.4215     YY=         -9.1694     ZZ=        -11.8195
+   XY=         0.3993     XZ=          0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.6181     YY=          2.6341     ZZ=         -0.0160
+   XY=         0.3993     XZ=          0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7653   YYY=          0.5211   ZZZ=         -0.0000
+   XYY=         -0.6484   XXY=         -0.3987   XXZ=         -0.0000
+   XZZ=         -0.6719   YZZ=         -0.4401   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001450856
+  E[DFT]  =    -93.351774566
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.015
+ Time of Exc-term gradient:(s)      0.015
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0095952648    -0.0134849383     0.0000000000
+  C          -0.0070444064     0.0166086785    -0.0000000000
+  H           0.0166396712    -0.0031237402    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:    9
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        5.49571
+  Delta_t =        0.00220
+  Delta_s =        0.10003
+  T_calc  =        5.45834
+  NSteps  =      2482/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.53652509    0.07967680    0.00000000
+  C               0.64993095   -0.12027348   -0.00000000
+  H              -0.06948677    1.08972676    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.660196        1.407715
+  Min Atomic Distance :         2.102889        1.112801
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800197          0.02853264         -0.00000000
+ 
+  Rotational Constants [GHZ]:
+     455.5692635          53.5873996          47.9474667
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.0268 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16204
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.519
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33247005E+01   3.22E+01   0.00E+00   5.83E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.32030800E+01   1.22E-01   9.96E-03   3.09E-02    0.00
+    3  -9.33401126E+01  -1.37E-01   5.58E-03   3.74E-02    0.00
+    4  -9.33349777E+01   5.13E-03   5.26E-03   6.01E-02    0.00
+    5  -9.33514722E+01  -1.65E-02   3.29E-03   8.41E-03    0.00
+    6  -9.33521146E+01  -6.42E-04   9.43E-04   8.10E-04    0.00
+    7  -9.33521207E+01  -6.11E-06   1.07E-04   6.57E-05    0.00
+    8  -9.33521208E+01  -5.02E-08   9.27E-06   1.59E-05    0.00
+    9  -9.33521208E+01  -2.94E-09   2.76E-06   2.74E-06    0.00
+   10  -9.33521208E+01  -1.05E-10   3.71E-07   5.60E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0059          EN_N =      24.056375981
+  ETot =      -93.352120790          Ekin =      92.807075844
+  EN_e =     -265.608255649          Ee_e =      65.565466269
+  E_xc =      -10.172783235          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3869249     -10.2645497      -1.0021060      -0.5224678
+       -0.4596727      -0.3826235      -0.3287373
+ 
+   vir orbital:      8    30
+       -0.0274315       0.0062315       0.0454194       0.3350399
+        0.5257368       0.5279963       0.5489815       0.6515620
+        0.7316469       0.7373294       0.7796941       0.8521415
+        1.2555355       1.4713738       1.4799996       1.5006832
+        1.7681209       1.8811871       2.0567843       2.3241100
+        2.5138455       2.5277908       2.7874638
+ 
+ HOMO =      -0.3287373 AU   index :  7
+ LUMO =      -0.0274315 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.3013059 AU    =     189.0724497 Kcal/mol
+             =       8.1989487 eV    =     791.0785752  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.333545
+     2   C         0.018743
+     3   H         0.314802
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.0062    Y=     1.3672    Z=     0.0000    Tot=     1.3672
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.4318     YY=         -9.1166     ZZ=        -11.8186
+   XY=         0.3284     XZ=         -0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.6428     YY=          2.6724     ZZ=         -0.0296
+   XY=         0.3284     XZ=         -0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7444   YYY=          0.6300   ZZZ=         -0.0000
+   XYY=         -0.7036   XXY=         -0.3202   XXZ=         -0.0000
+   XZZ=         -0.6592   YZZ=         -0.4251   YYZ=          0.0000
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001487743
+  E[DFT]  =    -93.353608533
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.002
+ Time of two-ints gradient:(s)      0.013
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0102985710    -0.0134333547     0.0000000000
+  C          -0.0065753268     0.0168202494    -0.0000000000
+  H           0.0168738978    -0.0033868947    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ IRC Backward Step:   10
+ 
+ Calculate the LQA Reaction Path:
+  T_est   =        5.41102
+  Delta_t =        0.00216
+  Delta_s =        0.10003
+  T_calc  =        5.37206
+  NSteps  =      2481/2500
+ 
+ Current Geometry(angstroms):
+ 
+  N              -0.53440925    0.08242558    0.00000000
+  C               0.65149882   -0.12425404   -0.00000000
+  H              -0.11755348    1.09893004    0.00000000
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.730390        1.444860
+  Min Atomic Distance :         2.076163        1.098658
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00800196          0.02853264          0.00000000
+ 
+  Rotational Constants [GHZ]:
+     457.8622958          53.3295846          47.7660287
+ 
+  Point Group of Current Geometry:      Cs
+ 
+  Max memory used/input in current calculation: 12MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0001 Seconds
+  Nuclear attraction   :               0.0001 Seconds
+  Dipole moment ints   :               0.0004 Seconds
+ 
+  Four-centre eris     :               0.0259 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-6)
+  Convergence of RMS-Density change :  10^(-6)
+ 
+  Atom SCF Done after   49 cycles for N
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 16206
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.509
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -9.33249473E+01   3.22E+01   0.00E+00   5.96E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -9.31990293E+01   1.26E-01   1.02E-02   3.09E-02    0.00
+    3  -9.33412504E+01  -1.42E-01   5.61E-03   3.92E-02    0.00
+    4  -9.33345396E+01   6.71E-03   5.46E-03   6.40E-02    0.00
+    5  -9.33533536E+01  -1.88E-02   3.39E-03   6.61E-03    0.00
+    6  -9.33539283E+01  -5.75E-04   9.17E-04   8.36E-04    0.00
+    7  -9.33539348E+01  -6.55E-06   1.12E-04   7.68E-05    0.00
+    8  -9.33539349E+01  -6.85E-08   1.10E-05   1.36E-05    0.00
+    9  -9.33539349E+01  -3.33E-09   2.99E-06   2.24E-06    0.00
+   10  -9.33539349E+01  -7.94E-11   3.41E-07   6.36E-07    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.002 min
+ 
+  -V/T =             2.0059          EN_N =      24.032084002
+  ETot =      -93.353934869          Ekin =      92.808644658
+  EN_e =     -265.578368522          Ee_e =      65.557759910
+  E_xc =      -10.174054917          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     7
+      -14.3838423     -10.2650935      -0.9987988      -0.5281161
+       -0.4547146      -0.3813353      -0.3279467
+ 
+   vir orbital:      8    30
+       -0.0317916       0.0065245       0.0498888       0.3356830
+        0.5265076       0.5294588       0.5497039       0.6476491
+        0.7319482       0.7376347       0.7949482       0.8591339
+        1.2589013       1.4730145       1.4769912       1.5007713
+        1.7489832       1.8807398       2.0818759       2.3211070
+        2.5137498       2.5365938       2.7867277
+ 
+ HOMO =      -0.3279467 AU   index :  7
+ LUMO =      -0.0317916 AU   index :  8
+ 
+ HOMO-LUMO gap:      0.2961551 AU    =     185.8402557 Kcal/mol
+             =       8.0587876 eV    =     777.5550850  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   N        -0.346290
+     2   C         0.026407
+     3   H         0.319883
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=    -0.0247    Y=     1.4099    Z=     0.0000    Tot=     1.4101
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -14.4296     YY=         -9.0640     ZZ=        -11.8165
+   XY=         0.2555     XZ=         -0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -2.6596     YY=          2.7060     ZZ=         -0.0465
+   XY=         0.2555     XZ=         -0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -3.7269   YYY=          0.7551   ZZZ=         -0.0000
+   XYY=         -0.7716   XXY=         -0.2274   XXZ=         -0.0000
+   XZZ=         -0.6463   YZZ=         -0.4085   YYZ=          0.0000
+   XYZ=          0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.001533928
+  E[DFT]  =    -93.355468798
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.001
+ Time of two-ints gradient:(s)      0.015
+ Time of Exc-term gradient:(s)      0.014
+ 
+ Cartesian Gradient (Hartrees/Bohr):
+                    x                y                z
+  N          -0.0110568955    -0.0136503377    -0.0000000000
+  C          -0.0060542143     0.0168705157     0.0000000000
+  H           0.0171111098    -0.0032201780    -0.0000000000
+ 
+ Total time of gradient:        0.0005 min
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+             Results of Intrinsic Reaction Coordinate
+ 
+          RxCoord             Energy           dE(kcal/mol)
+         -1.00017         -93.355468798          -8.8060
+         -0.90014         -93.353608533          -7.6386
+         -0.80011         -93.351774566          -6.4878
+         -0.70009         -93.349969211          -5.3549
+         -0.60006         -93.348195356          -4.2418
+         -0.50006         -93.346479257          -3.1649
+         -0.40005         -93.344879767          -2.1612
+         -0.30004         -93.343483747          -1.2852
+         -0.20003         -93.342388296          -0.5978
+         -0.10000         -93.341683121          -0.1553
+          0.00000         -93.341435600           0.0000
+          0.10000         -93.341682931          -0.1552
+          0.20005         -93.342436981          -0.6284
+          0.30011         -93.343690353          -1.4149
+          0.40015         -93.345416603          -2.4981
+          0.50017         -93.347574578          -3.8523
+          0.60021         -93.350113287          -5.4453
+          0.70024         -93.352974711          -7.2409
+          0.80026         -93.356101778          -9.2032
+          0.90026         -93.359438294         -11.2969
+          1.00030         -93.362931006         -13.4886
+ 
+ ====================================================================
+ 
+ The program run from  2024-03-20  21:37:48  to  2024-03-20  21:38:04
+ Total run time:     0 days,   0  hours,   0 minutes, 16.4821 seconds
+ Normal termination of Amesp!
+ 
+ ====================================================================

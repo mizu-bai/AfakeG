@@ -4,7 +4,7 @@
 
 ## Introduction
 
-AfakeG is a tool for Amesp output file visualization. It can convert the output file of geometry task to Gaussian-like format.
+AfakeG is a tool for Amesp output file visualization. It can convert the output file of geometry optimization task to Gaussian-like format.
 
 ## Usage
 
